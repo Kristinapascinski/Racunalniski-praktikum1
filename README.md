@@ -1,5 +1,5 @@
-# Racunalniski praktikum
+# Računalniški praktikum
 ## Moj prvi repozitorij,
 + shrani - command + s,
 + izberi vse - command + a, 
-+ premakni se na začetek vrste - command + left arrow,
++ premakni se na začetek vrste - command + left arrow
