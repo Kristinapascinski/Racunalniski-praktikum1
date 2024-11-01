@@ -64,3 +64,14 @@ dl dt {
     margin-right: 1em;
 }
 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ blockquote {
+    background-color: rgba(51, 81, 126, 0.2); 
+    border: 1px;
+    color: var(--header-color);
+    padding: 10px;
+    margin: 20px;
+}
