@@ -24,6 +24,7 @@ body {
     margin: auto;
     text-align: justify;
     font-size: 1.2em;
+    
 }
 
 .hec {
@@ -71,7 +72,7 @@ img {
  blockquote {
     background-color: rgba(51, 81, 126, 0.2); 
     border: 1px;
-    color: var(--header-color);
+    color: rgb(51, 81, 126);
     padding: 10px;
     margin: 20px;
 }
