@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1731195084.47145 "/Users/kristina/repozitoriji/Racunalniski-praktikum1/06-uvod-v-latex/urnik/urnik.tex" "urnik.pdf" "urnik" 1731195086.03685 0
-  "/Users/kristina/repozitoriji/Racunalniski-praktikum1/06-uvod-v-latex/urnik/urnik.tex" 1731195084.18132 29424 7d20c3c269a3de3894cb7422d8201c4b ""
+["pdflatex"] 1731195602.31773 "/Users/kristina/repozitoriji/Racunalniski-praktikum1/06-uvod-v-latex/urnik/urnik.tex" "urnik.pdf" "urnik" 1731195603.31105 0
+  "/Users/kristina/repozitoriji/Racunalniski-praktikum1/06-uvod-v-latex/urnik/urnik.tex" 1731195602.04092 29425 d314db3c99651be944ff07f9148b5046 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -76,8 +76,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1731177719.08577 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1731177533 8221426 f5f3961ea1c688fa3ce7cbef53dcb414 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "urnik.aux" 1731195085.76356 1583 b53c5175570dc77046b836489404ced6 "pdflatex"
-  "urnik.tex" 1731195084.18132 29424 7d20c3c269a3de3894cb7422d8201c4b ""
+  "urnik.aux" 1731195603.13985 1583 b53c5175570dc77046b836489404ced6 "pdflatex"
+  "urnik.tex" 1731195602.04092 29425 d314db3c99651be944ff07f9148b5046 ""
   (generated)
   "urnik.aux"
   "urnik.log"
