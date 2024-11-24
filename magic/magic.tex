@@ -10,6 +10,7 @@
 \usepackage{amsthm}
 \usepackage{color}
 \usepackage{makeidx}
+\usepackage{booktabs}
 \newtheorem{definition}{Definicija}
 \newtheorem{theorem}{Izrek}[section]
 
@@ -40,9 +41,11 @@
 % Na tem mestu vključite sliko `slika.pdf`:
 % - naredite okolje `center`, da bo slika postavljena na sredino
 % - v okolju `center' uporabite ukaz  `\includegraphics{slika.pdf}`
-\begin{center}
+\begin{figure}[!ht]
+   \centering
    \includegraphics{slika.pdf}
-\end{center}
+   \label{fig: slika1}
+\end{figure}
 Prirejeno iz virov:
 
 % 3. naloga
@@ -195,7 +198,7 @@ Lo Shu, vendar je vsako število povečano za 19.
 % Konec magičnega kvadrata
 
 Z magičnimi kvadrati so se ukvarjali tudi najbolj znani matematiki kot na
-primer Euler, glej [3]. % ključ: euler
+primer Euler, glej \cite{euler}. % ključ: euler
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -213,7 +216,7 @@ v evropski umetnosti. Zelo podoben je kvadratu Yang Huija, ki je nastal na Kitaj
 približno 250 let pred Dürerjevim časom. % sklic: fig:durer
 
 % Tu vstavite sliko
-\begin{figure}[h]
+\begin{figure}[!ht]
    \centering
    \caption{Dürerjev magični kvadrat}
    \label{fig:durer}
@@ -258,10 +261,10 @@ simetričnih parov ($2+8+9+15$ in $3+5+12+14$), in še na nekaj drugih načinov.
 %    9 &  6 &  7 & 12 \\\hline
 %    4 & 15 & 14 &  1 \\\hline
 
-Pasijonska fasada na katedrali Sagrada família v Barceloni
+\textbf{Pasijonska fasada na katedrali Sagrada família v Barceloni}
 (glej sliko ?? za fotografijo) vsebuje magični kvadrat reda 4.
 % sklic: fig:sagrada
-\begin{figure}
+\begin{figure}[!ht]
    \centering
    \caption{Pasijonska fasada, Sagrada Família}
    \label{fig:sagrada}
@@ -316,7 +319,7 @@ in zato kvadrat ni normalen.
 
 % Začetek okolja izrek
 \begin{theorem}
-   Magična konstanta normalnega magičnega kvadrata reda n
+   Magična konstanta normalnega magičnega kvadrata reda $n$
    je enaka
    \begin{equation}
       % oznaka: eq:mc
@@ -328,7 +331,7 @@ in zato kvadrat ni normalen.
 % Začetek dokaza
 \begin{proof}
    V normalnem magičnem kvadratu reda $n$ je vsota vseh nastopajočih
-   števil (glej ?? na strani ??) enaka
+   števil (glej \ref{table:mag3} na strani \pageref{table:mag3}) enaka
    $1+2+3+\dots+n^2=\sum_{k=1}^{n^2}k=\frac{1}{2}n^2(n^2+1)$. Ker imamo
    v kvadratu $n$ vrstic z enako vsoto, je vsota števil v eni vrstici
    enaka številu $M_2(n)$. % sklica: eq:numbers, eq:numbers
@@ -336,11 +339,13 @@ in zato kvadrat ni normalen.
 \end{proof}
 % Konec dokaza
 
-Preprost račun pokaže, da je konstanti ?? analogna konstanta
+Preprost račun pokaže, da je konstanti \ref{table:loshu} analogna konstanta
 $M_2(n;A,D)$ za magični kvadrat, v katerem so nameščena števila
 $A$, $A+D$, $A+2D$, \dots, $A+(n^2-1)D$, enaka % sklic: eq:mc
-!!
-Kvadratu v tabeli ?!? ustrezata konstanti $A=20$ in $D=1$.
+\begin{equation}
+   M_2(n;A,D) = \frac{1}{2}n (2A + D(n^2-1))
+\end{equation}
+Kvadratu v tabeli \ref{table:mag3} ustrezata konstanti $A=20$ in $D=1$.
 
 % \begin{definicija}
 \begin{definition}
@@ -351,9 +356,10 @@ Kvadratu v tabeli ?!? ustrezata konstanti $A=20$ in $D=1$.
 \end{definition}
 % \end{definicija}
 
-Na primer, magičnemu kvadratu Lo Shu (glej tabelo 2 priredimo
-komplementarni kvadrat, prikazan v tabeli 6.
-\begin{table}[h]
+Na primer, magičnemu kvadratu Lo Shu (glej tabelo \ref{table:loshu} priredimo
+komplementarni kvadrat, prikazan v tabeli \ref{table:mag6}.
+
+\begin{table}[!ht]
    \centering
    \caption{Kvadratu Lo Shu komplementarni kvadrat}
    \label{table:closhu}
@@ -394,14 +400,24 @@ S
    \end{definition}
 % \end{definicija}
 
-Števila različnih normalnih magičnih kvadratov se nahajajo v tabeli 7.
-% sklic: table:stevila
+Števila različnih normalnih magičnih kvadratov se nahajajo v tabeli \ref{table:sagrada}
+% sklic: table:stevil
 
 % - napis nad tabelo: Število različnih normalnih magičnih kvadratov
 % - oznaka: table:stevila
 % Začetek tabele
-manjkaaaaaaaa tabela 
-      
+\begin{table}[!ht]
+   \centering
+\caption{Število različnih normalnih magičnih kvadratov}
+\begin{tabular}{lcccccc}\toprule
+
+   &\multicolumn{5}{c}{točna vrednost}&približek\\
+    \midrule 
+      red             &1 2 3 4 5&6\\
+      število kvadratov&1 0 1 880 275305224&$(1,7745\pm 0,0016)\times 10^{19} $\\
+      \bottomrule
+\end{tabular}
+\end{table}
 
 
 % Konec tabele
@@ -413,6 +429,7 @@ R. Schroeppel leta 1973 (glej Gardner [4]).
 Natančno število vseh različnih normalnih magičnih kvadratov reda 6 ni znano.
 Avtorja navedenega približka sta Pinn in Wieczerkowski (glej [5]), ki
 sta za oceno uporabila simulacijo Monte Carlo in metode statistične mehanike.
+\cite{bessy, berlekamp, gardner, pinn}
  % ključi: bessy, berlekamp, gardner, pinn
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -529,9 +546,9 @@ magični kvadrati redov 5, 6 in 9.
 
 \newpage
 
-\bibliographystyle{plain}
+\bibliographystyle{siam}
 
-\bibliography{literatura}
+\bibliography{magic.bib}
 
 \printindex
 
